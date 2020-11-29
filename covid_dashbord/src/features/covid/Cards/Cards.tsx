@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
 import { selectData } from "../covidSlice";
 import CountUp from "react-countup";
 
-const Cards = () => {
+const Cards: React.FC = () => {
   const data = useSelector(selectData);
   return (
     <div className={styles.container}>
